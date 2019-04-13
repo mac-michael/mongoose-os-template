@@ -1,7 +1,7 @@
 CMAKE_MINIMUM_REQUIRED(VERSION 3.0.1)
 
 # Download and unpack googletest at configure time
-configure_file(CMakeLists.txt.in gtest/CMakeLisats.txt)
+configure_file(CMakeLists.txt.in gtest/CMakeLists.txt)
 execute_process(COMMAND "${CMAKE_COMMAND}" -G "${CMAKE_GENERATOR}" .
         WORKING_DIRECTORY "${CMAKE_BINARY_DIR}/tests/gtest" )
 execute_process(COMMAND "${CMAKE_COMMAND}" --build .

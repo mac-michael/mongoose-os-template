@@ -1,5 +1,5 @@
 #include <cstdio>
-#include "gtest/googletest/include/gtest/gtest.h"
+#include <gtest/gtest.h>
 #include "../include/Module.h"
 
 int run();
@@ -12,6 +12,7 @@ int main(int argc, char **argv) {
 	return res;
 }
 
+// TODO cannot link with mgos used functionality - extract logic
 TEST(Tests, Test) {
 
 	helper();

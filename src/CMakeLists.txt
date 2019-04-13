@@ -23,7 +23,7 @@ ELSEIF(${MCU_Platform} STREQUAL "ESP32")
     SET(CMAKE_C_COMPILER "${TOOLCHAIN_ESP32}/xtensa-esp32-elf-gcc.exe")
     SET(CMAKE_CXX_COMPILER "${TOOLCHAIN_ESP32}/xtensa-esp32-elf-g++.exe")
 elseif(${MCU_Platform} STREQUAL "Windows")
-    MESSAGE("Using extensa VS C++ compiler")
+    MESSAGE("Using VS C++ compiler")
 
     SET(CMAKE_SYSTEM_NAME Windows)
 

@@ -1,6 +1,5 @@
 #include "mgos.h"
 #include <mgos_config.h>
-#include <stdio.h>
 
 int run();
 
@@ -20,8 +19,7 @@ enum mgos_app_init_result mgos_app_init() {
 }
 
 int run() {
-
-	printf("hello");
+	LOG(LL_INFO, (("Hi from run()")));
 
 	return 0;
 }

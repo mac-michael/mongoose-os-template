@@ -30,9 +30,6 @@ endif()
 
 SET(SOURCE_FILES tests.cpp)
 
-INCLUDE_DIRECTORIES("gtest/googletest/include")
-ADD_SUBDIRECTORY(gtest)
-
 IF(${MCU_Platform} STREQUAL "Windows")
     ADD_EXECUTABLE(runUnitTests tests.cpp)
     TARGET_LINK_LIBRARIES(runUnitTests gtest gmock compile_local_sensor)

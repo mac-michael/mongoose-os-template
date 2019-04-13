@@ -1,0 +1,22 @@
+author: Michael Mac
+description: A Mongoose OS CLion template
+version: 1.0
+
+includes:
+  - include
+
+tags:
+  - c
+
+sources:
+  - src
+
+filesystem:
+  - fs
+
+libs:
+  - origin: https://github.com/mongoose-os-libs/rpc-service-config
+  - origin: https://github.com/mongoose-os-libs/rpc-service-fs
+  - origin: https://github.com/mongoose-os-libs/rpc-uart
+
+manifest_version: 2017-09-29

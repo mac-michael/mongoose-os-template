@@ -11,4 +11,4 @@ Mongoose os template with the following features:
 - other build, flash scripts
 
 
-Some features are still development
+Some features are still in development

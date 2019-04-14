@@ -1,1 +1,1 @@
-xtensa-esp32-elf-gdb.exe -x tools/.gdbinit-command-line  build/objs/mongoose-os-template.elf
+xtensa-esp32-elf-gdb.exe -x tools/.gdbinit-command-line build/objs/mongoose-os-template.elf

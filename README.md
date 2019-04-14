@@ -19,12 +19,12 @@ Mongoose os template with the following features:
     
     Optinally you can use VCC from JTAG and connect the reset pin. 
     
-    3) run start_openocd.bat. I usually do it by hand. You can reconfigure appropriate OpenOCD configuration inside the file.
+    3) run debug_start_openocd.bat. I usually do it by hand. You can reconfigure appropriate OpenOCD configuration inside the file.
     ![screen](docs/OpenOCD-started.jpg)
     4) update .gdbinit and\or .gdbinit-command-line accordingly
     5) start debugger:
         * command line:
-            1) start xtensa-esp32-elf-gdb.exe -x tools/.gdbinit-command-line build/objs/mongoose-os-template.elf
+            1) start xtensa-esp32-elf-gdb.exe -x tools/.gdbinit-command-line build/objs/mongoose-os-template.elf  (debug_start_gdb.bat)
             ![screen](docs/GDB-Debug-session.jpg)
         * clion:
             1) Create GDB remote debug configuration. You can use OpenOCD Download & Run however you cannot configure it with additional params (as for now)

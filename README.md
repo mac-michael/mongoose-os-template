@@ -25,13 +25,13 @@ Mongoose os template with the following features:
     5) start debugger:
         * command line:
             1) start xtensa-esp32-elf-gdb.exe -x tools/.gdbinit-command-line build/objs/mongoose-os-template.elf
-            ![screen](docs\Gdb-Debug-session.jpg)
+            ![screen](docs/Gdb-Debug-session.jpg)
         * clion:
             1) Create GDB remote debug configuration. You can use OpenOCD Download & Run however you cannot configure it with additional params (as for now)
-            ![screen](docs\Gdb-Remote-config.jpg)
+            ![screen](docs/Gdb-Remote-config.jpg)
             2) Create custom tool (debug_copy_gdbinit.cmd) and run it before lunch - CLion does not allow to use local .gdbinit as for now so we copy it to %HOME%/.gdbinit before each run.
             3) Select config and press Debug (Alt + F5).
-            ![screen](docs\CLion-Debug-session.jpg)   
+            ![screen](docs/CLion-Debug-session.jpg)   
 - Google test under windows build
 - CLion tested
 - other build, flash scripts

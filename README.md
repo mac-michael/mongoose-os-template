@@ -17,7 +17,7 @@ Mongoose os template with the following features:
     | GPIO 15 (TDO) | ADBUS2        |
     | GND           | GND           |
     
-    Optinally you can use VCC from JTAG and connect reset pin. 
+    Optinally you can use VCC from JTAG and connect the reset pin. 
     
     3) run start_openocd.bat. I usually do it by hand. You can reconfigure appropriate OpenOCD configuration inside the file.
     ![screen](docs/OpenOCD-started.jpg)

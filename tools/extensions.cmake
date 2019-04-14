@@ -1,0 +1,11 @@
+
+MACRO(INCLUDE_DIRECTORIES_RECURSIVELY path )
+    FILE(GLOB_RECURSE new_list ${path})
+    SET(dir_list "")
+    FOREACH(file_path ${new_list})
+        GET_FILENAME_COMPONENT(dir_path ${file_path} PATH)
+        SET(dir_list ${dir_list} ${dir_path})
+    ENDFOREACH()
+    LIST(REMOVE_DUPLICATES dir_list)
+    include_directories(${dir_list})
+ENDMACRO()

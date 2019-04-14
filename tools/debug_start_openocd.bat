@@ -1,1 +1,1 @@
-C:\esp\openocd-esp32\bin\openocd.exe -c "tcl_port disabled"  -s C:\esp\openocd-esp32\share\openocd\scripts -c "gdb_port 3333" -c "telnet_port 4444" -f board/esp-wroom-32.cfg
+C:\esp\openocd-esp32\bin\openocd.exe -c "tcl_port disabled"  -s C:\esp\openocd-esp32\share\openocd\scripts -c "gdb_port 3333" -c "telnet_port 4444" -f interface/ftdi/esp32_devkitj_v1.cfg -f board/esp-wroom-32.cfg

@@ -20,7 +20,7 @@ Mongoose os template with the following features:
     Optinally you can use VCC from JTAG and connect reset pin. 
     
     3) run start_openocd.bat. I usually do it by hand. You can reconfigure appropriate OpenOCD configuration inside the file.
-    ![screen](docs\OpenOCD started.jpg)
+    ![screen](docs/OpenOCD started.jpg)
     4) update .gdbinit and\or .gdbinit-command-line accordingly
     5) start debugger:
         * command line:

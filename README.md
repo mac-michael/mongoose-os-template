@@ -31,7 +31,7 @@ Mongoose os template with the following features:
             ![screen](docs/GDB-Remote-config.jpg)
             2) Create custom tool (debug_copy_gdbinit.cmd) and run it before lunch - CLion does not allow to use local .gdbinit as for now so we copy it to %HOME%/.gdbinit before each run.
             3) Select config and press Debug (Alt + F5).
-            ![screen](docs/CLion-debug-session.jpg)   
+            ![screen](docs/CLion-debug-session.jpg)
 - Google test under windows build
 - CLion tested
 - other build, flash scripts

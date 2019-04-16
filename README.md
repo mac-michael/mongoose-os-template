@@ -17,6 +17,8 @@ Mongoose os template with the following features:
         | GPIO 15 (TDO) | ADBUS2        |
         | GND           | GND           |
         
+        ![screen](docs/FT2232H.jpg)
+        
         Optinally you can use the reset pin. 
         
         TIP: If you use FT2232 (or FT4232H - 4 channels) you can use the second channel for TX\RX

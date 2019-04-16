@@ -1,6 +1,7 @@
 $path = Get-Location | Split-Path -leaf
-$elfFileName = "build/objs/" + $path + ".elf"
-$params = "program_esp32 " + $elfFileName + " 0x10000 reset exit"
+$binFileName = "build/objs/" + $path + ".bin"
+$params = "program_esp32 " + $binFileName + " 0x10000 reset exit"
+
 
 Write-Host $params
 

@@ -1,0 +1,1 @@
+openocd -s share/openocd/scripts -f interface/ftdi/esp32_devkitj_v1.cfg -f board/esp-wroom-32.cfg -c "init" -c "reset" -c "exit"

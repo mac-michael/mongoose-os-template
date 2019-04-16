@@ -7,18 +7,25 @@ Mongoose os template with the following features:
     * full mos build
 - ESP32 on-chip debugging (GDB) with OpenOCD and JTAG
     1) build and flash MCU.
-    2) Connect JTAG to MCU. I use ESP32 devkit + FTDI FT2232H. Pinout (https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT2232H.pdf):
+    2) Connect JTAG to MCU. I use ESP32 devkit\Wemos ESP32 Pro + FTDI FT2232H. Pinout (https://www.ftdichip.com/Support/Documents/DataSheets/ICs/DS_FT2232H.pdf):
     
-    | ESP32         | JTAG          |
-    | ------------- | ------------- |
-    | GPIO 12 (TDI) | ADBUS1        |
-    | GPIO 13 (TCK) | ADBUS0        |
-    | GPIO 14 (TMS) | ADBUS3        |
-    | GPIO 15 (TDO) | ADBUS2        |
-    | GND           | GND           |
-    
-    Optinally you can use the reset pin. 
-    
+        | ESP32         | JTAG          |
+        | ------------- | ------------- |
+        | GPIO 12 (TDI) | ADBUS1        |
+        | GPIO 13 (TCK) | ADBUS0        |
+        | GPIO 14 (TMS) | ADBUS3        |
+        | GPIO 15 (TDO) | ADBUS2        |
+        | GND           | GND           |
+        
+        Optinally you can use the reset pin. 
+        
+        TIP: If you use FT2232 (or FT4232H - 4 channels) you can use the second channel for TX\RX
+        
+        | ESP32         | JTAG          |
+        | ------------- | ------------- |
+        | RX            | BDBUS0        |
+        | TX            | BDBUS1        |
+        
     3) run debug_start_openocd.bat. I usually do it by hand. You can reconfigure appropriate OpenOCD configuration inside the file.
     ![screen](docs/OpenOCD-started.jpg)
     4) update .gdbinit and\or .gdbinit-command-line accordingly
